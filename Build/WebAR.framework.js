@@ -6,21 +6,6 @@ var unityFramework = (() => {
 function(unityFramework) {
   unityFramework = unityFramework || {};
 
-  //changes
-                        Zappar.permissionRequestUI().then((granted) => {
-                      if (granted) {
-                          console.log("Permissions granted!");
-                          startWebAR(); // Call your WebAR initialization function here
-                      } else {
-                          console.error("Permissions denied! Camera access is required.");
-                      }
-                  });
-                  
-                  function startWebAR() {
-                      // Place your WebAR initialization code here
-                      console.log("Starting WebAR...");
-                  }
-      //changes
 
 var Module=typeof unityFramework!="undefined"?unityFramework:{};var readyPromiseResolve,readyPromiseReject;Module["ready"]=new Promise(function(resolve,reject){readyPromiseResolve=resolve;readyPromiseReject=reject});Module['WebXR'] = Module['WebXR'] || {};
 
