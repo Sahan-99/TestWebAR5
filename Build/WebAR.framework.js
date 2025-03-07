@@ -277,6 +277,22 @@ void main()
       {
         return start + (end - start) * percentage;
       }
+
+      //changes
+                        Zappar.permissionRequestUI().then((granted) => {
+                      if (granted) {
+                          console.log("Permissions granted!");
+                          startWebAR(); // Call your WebAR initialization function here
+                      } else {
+                          console.error("Permissions denied! Camera access is required.");
+                      }
+                  });
+                  
+                  function startWebAR() {
+                      // Place your WebAR initialization code here
+                      console.log("Starting WebAR...");
+                  }
+      //changes
     
       function XRTouch(touchID, pageElement, xPercentage, yPercentage) {
         this.identifier = touchID;
